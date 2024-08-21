@@ -16,7 +16,7 @@ The Language Prediction Web App is a tool for predicting the language of a given
 
 The project is organized as follows:
 ```
-language-prediction-web-app/
+Language-predictor/
 ├── app
 │   ├── main.py
 │   ├── model
@@ -47,8 +47,8 @@ Ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/ganeshborkar31/Language-predictor.git
+   cd Language-predictor
 
 2. **Create and Activate a Virtual Environment**
 
@@ -73,6 +73,7 @@ Ensure you have the following installed:
 5. **Run the FastAPI application:**
 
     ```bash
+    cd app
     python -m uvicorn app.main:app --reload
 
 The application will be available at http://127.0.0.1:8000.
