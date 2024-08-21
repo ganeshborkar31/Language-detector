@@ -1,12 +1,12 @@
-# Language Detection Web App
+# Language Prediction Web App
 
 ## Overview
 
-The Language Prediction Web App is a tool for predicting the language of a given text. Built using FastAPI for the backend and HTML, CSS, and JavaScript for the frontend, this application provides a user-friendly interface for language detection. It handles various inputs and displays appropriate messages for both detection and errors.
+The Language Prediction Web App is a tool for predicting the language of a given text. Built using FastAPI for the backend and HTML, CSS, and JavaScript for the frontend, this application provides a user-friendly interface for language detection. It handles various inputs and displays appropriate messages for both prediction and errors.
 
 ## Features
 
-- **Language Prediction**: Detects the language of a given text using an ML model.
+- **Language Prediction**: Predict the language of a given text using an ML model.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Error Handling**: Displays a user-friendly message when no text is entered.
 - **Loading Indicator**: Shows a loading message while processing the prediction.
@@ -65,6 +65,9 @@ Ensure you have the following installed:
     ```Copy code 
     fastapi
     uvicorn
+    pydantic
+    scikit-learn
+    
     
 
 5. **Run the FastAPI application:**
