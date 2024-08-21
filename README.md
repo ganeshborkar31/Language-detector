@@ -116,8 +116,39 @@ The application will be available at http://127.0.0.1:8000.
        ```
 ## **Troubleshooting**
 
-- Error: TypeError: expected string or bytes-like object, got 'TextInput'
+1. #### Error: TypeError: expected string or bytes-like object, got 'TextInput'
     - Solution: Ensure the input is a string and properly extracted in the FastAPI endpoint.
+ 
+2. #### To ensure that your Python server remains running after you disconnect from an SSH session, you can use several methods. Given your command python -m uvicorn main:app --host 0.0.0.0 --port 8000, here are some effective ways to keep it running:
+- Using nohup
+
+  1. The nohup (no hang-up) command allows processes to continue running in the background even after you log out from the SSH session.
+
+     - Run the Command with nohup:
+
+       ```bash
+       nohup python -m uvicorn main:app --host 0.0.0.0 --port 8000 > server.log 2>&1 &
+       ````
+
+   2. nohup: Prevents the process from being stopped when you log out.
+       > server.log 2>&1: Redirects both stdout and stderr to server.log.
+       &: Runs the command in the background.
+
+      - Verify the Process:
+
+          - You can check if the server is running by looking for the process:
+
+          ```bash
+          ps aux | grep uvicorn
+          ```
+
+   3. Stop the Process (if needed):
+
+       - To stop the process, you’ll need to find its process ID (PID) and then kill it:
+
+       ```bash
+         kill <PID>
+
 ## **Contact**
 - ganeshborkar107@gmail.com
 
