@@ -114,7 +114,7 @@ The application will be available at http://127.0.0.1:8000.
 
 - Error: TypeError: expected string or bytes-like object, got 'TextInput'
     - Solution: Ensure the input is a string and properly extracted in the FastAPI endpoint.
-## **contact**
+## **Contact**
 - ganeshborkar107@gmail.com
 
 ### Summary of the `README.md` Sections
