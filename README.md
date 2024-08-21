@@ -1,12 +1,12 @@
-# Language Prediction Web App
+# Language Detection Web App
 
 ## Overview
 
-The Language Prediction Web App is a tool for predicting the language of a given text. Built using FastAPI for the backend and HTML, CSS, and JavaScript for the frontend, this application provides a user-friendly interface for language detection. It handles various inputs and displays appropriate messages for both predictions and errors.
+The Language Prediction Web App is a tool for predicting the language of a given text. Built using FastAPI for the backend and HTML, CSS, and JavaScript for the frontend, this application provides a user-friendly interface for language detection. It handles various inputs and displays appropriate messages for both detection and errors.
 
 ## Features
 
-- **Language Prediction**: Predicts the language of a given text using an ML model.
+- **Language Prediction**: Detects the language of a given text using an ML model.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 - **Error Handling**: Displays a user-friendly message when no text is entered.
 - **Loading Indicator**: Shows a loading message while processing the prediction.
@@ -53,8 +53,8 @@ Ensure you have the following installed:
 2. **Create and Activate a Virtual Environment**
 
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    python -m venv myvenv
+    source myvenv/bin/activate  # On Windows, use `myvenv\Scripts\activate`
 
 3. **Install the required packages:**
 
@@ -95,24 +95,27 @@ The application will be available at http://127.0.0.1:8000.
 
     - On success:
 
-    ```json
+       ```json
+   
+       {
+       "language": "Predicted Language"
+       }
+       ```
 
-    {
-    "language": "Predicted Language"
-    }
+     - On error (empty input):
 
-  - On error (empty input):
-
-    ```json
-
-    {
-    "error": "Please enter some text."
-    }
+       ```json
+   
+       {
+       "error": "Please enter some text."
+       }
+       ```
 ## **Troubleshooting**
 
 - Error: TypeError: expected string or bytes-like object, got 'TextInput'
     - Solution: Ensure the input is a string and properly extracted in the FastAPI endpoint.
-
+## **contact**
+- ganeshborkar107@gmail.com
 
 ### Summary of the `README.md` Sections
 
