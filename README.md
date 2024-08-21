@@ -11,19 +11,27 @@ The Language Prediction Web App is a tool for predicting the language of a given
 - **Error Handling**: Displays a user-friendly message when no text is entered.
 - **Loading Indicator**: Shows a loading message while processing the prediction.
 
+
 ## Project Structure
 
 The project is organized as follows:
-```plaintext
-- `app/` - Contains the FastAPI application code.
-  - `main.py` - FastAPI application with endpoints and logic.
-- `static/` - Contains static assets served by FastAPI.
-  - `css/` - Stylesheets for the frontend.
-    - `styles.css` - Main stylesheet for styling the web app.
-  - `js/` - JavaScript files for frontend functionality.
-    - `script.js` - Handles API requests and updates the UI.
-- `templates/` - Contains HTML files served by FastAPI.
-  - `index.html` - The main HTML file for the web app.
+```
+language-prediction-web-app/
+├── app
+│   ├── main.py
+│   ├── model
+│   │   ├── model.py
+│   │   └── trained_pipeline-0.1.0.pkl
+│   ├── requirements.txt
+│   ├── static
+│   │   ├── css
+│   │   │   └── styles.css
+│   │   └── js
+│   │       └── script.js
+│   └── templates
+│       └── index.html
+└── README.md
+```
 
 ## Getting Started
 
