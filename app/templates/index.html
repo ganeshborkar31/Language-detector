@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Prediction</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Language Predictor</h1>
+        <div class="input-group">
+            <textarea id="textInput" rows="10" placeholder="Enter text here" oninput="clearResult()"></textarea>
+            <button id="predictButton" onclick="predictLanguage()">Predict</button>
+        </div>
+        <div id="loading" class="loading" style="display: none;">Predicting...</div>
+        <div id="result" class="result"></div> <!-- This will show either results or errors -->
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
+
+
+
