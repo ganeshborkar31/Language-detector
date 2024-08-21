@@ -14,16 +14,16 @@ The Language Prediction Web App is a tool for predicting the language of a given
 ## Project Structure
 
 The project is organized as follows:
-
-- `app/` - Contains the FastAPI application code.
-  - `main.py` - FastAPI application with endpoints and logic.
-- `static/` - Contains static assets served by FastAPI.
-  - `css/` - Stylesheets for the frontend.
-    - `styles.css` - Main stylesheet for styling the web app.
-  - `js/` - JavaScript files for frontend functionality.
-    - `script.js` - Handles API requests and updates the UI.
-- `templates/` - Contains HTML files served by FastAPI.
-  - `index.html` - The main HTML file for the web app.
+  ```plaintext
+  - `app/` - Contains the FastAPI application code.
+    - `main.py` - FastAPI application with endpoints and logic.
+  - `static/` - Contains static assets served by FastAPI.
+    - `css/` - Stylesheets for the frontend.
+      - `styles.css` - Main stylesheet for styling the web app.
+    - `js/` - JavaScript files for frontend functionality.
+      - `script.js` - Handles API requests and updates the UI.
+  - `templates/` - Contains HTML files served by FastAPI.
+    - `index.html` - The main HTML file for the web app.
 
 ## Getting Started
 
